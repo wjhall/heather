@@ -13,22 +13,22 @@ app=web.auto_application()
 
 class spence(app.page):
     def GET(self):
-        return get_temp(probeMap.spence)
+        return get_temp(probeMap['spence'])
     
 class lounge(app.page):
     def GET(self):
-        return get_temp(probeMap.lounge)
+        return get_temp(probeMap['lounge'])
 
 class conservatory(app.page):
     def GET(self):
-        return get_temp(probeMap.conservatory)
+        return get_temp(probeMap['conservatory'])
 
 class bedroom(app.page):
     def GET(self):
-        return get_temp(probeMap.bedroom)
+        return get_temp(probeMap['bedroom'])
 
 class exterior(app.page):
     def GET(self):
-        return get_temp(probeMap.exterior)		
+        return get_temp(probeMap['exterior'])		
 
 app.run()
