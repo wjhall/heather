@@ -15,3 +15,10 @@ mkdir heather
 git init
 git remote add origin https://github.com/wjhall/heather.git
 git pull||push origin master
+
+setup to run webserver at startup
+sudo apt-get install gnome-schedule
+crontab -e
+add:
+@reboot sudo python /home/pi/Desktop/heather/slave.py
+save/close/reboot/test
