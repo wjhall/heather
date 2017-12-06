@@ -10,5 +10,8 @@ probeMap={
 
 def get_temp(filename):
     with open(filename, 'r') as f:
-        lines = f.read()
-        return float(lines.split("t=")[1])/1000
+        line = f.readline()
+        if line.split(" ")[-1]!="YES\n":
+            return None
+        line = f.readline()
+        return float(line.split("t=")[1])/1000
