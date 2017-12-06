@@ -9,21 +9,24 @@
 - 192.168.0.102 Slave (exterior, Conservatory) 28-0316453747ff, 28-0316473cfdff
 
 **git setup (replace [] with content, do not reatain []):**
-
-- cd Desktop
-- git config --global user.email [your email here]
-- git config --global user.name [your name here]
-- mkdir heather
-- git init
-- git remote add origin https://github.com/wjhall/heather.git
-- git pull||push origin master
-
+```
+cd Desktop
+git config --global user.email [your email here]
+git config --global user.name [your name here]
+mkdir heather
+git init
+git remote add origin https://github.com/wjhall/heather.git
+git pull||push origin master
+```
 **setup to run webserver at startup**
-
-- sudo apt-get install gnome-schedule
-- crontab -e
+```
+sudo apt-get install gnome-schedule
+crontab -e
+```
 - add:
-- @reboot sudo python /home/pi/Desktop/heather/slave.py
+```
+@reboot sudo python /home/pi/Desktop/heather/slave.py
+```
 - save/close/reboot/test
 
 **Todo list:**
