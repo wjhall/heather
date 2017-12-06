@@ -29,6 +29,15 @@ crontab -e
 ```
 - save/close/reboot/test
 
+**SQL setup**
+```
+sudo apt-get install sqlite3
+cd Desktop/heather/
+sqlite3 heather.db
+.exit
+```
+
+
 **Todo list:**
 
 - [ ] Clone relay/boiler slave
