@@ -32,8 +32,7 @@ crontab -e
 **SQL setup**
 ```
 sudo apt-get install sqlite3
-cd Desktop/heather/
-sqlite3 heather.db
+run dbInit.py to setup heather.db with temp_log, bed_sched and lou_sched tables with sched tables initialiesd with weekly values to 15.0
 .exit
 ```
 
