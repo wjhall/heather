@@ -19,7 +19,7 @@ spence REAL,
 exterior REAL,
 conservatory REAL,
 bedroom REAL,
-boilder INTEGER
+boiler INTEGER
 );
 ''')
 

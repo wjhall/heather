@@ -36,13 +36,18 @@ run dbInit.py to setup heather.db with temp_log, bed_sched and lou_sched tables 
 .exit
 ```
 
+***Logging***
+tempUpdate.py is to run on the master and will log temperatures to db.
+to run per minuite, use following in crontab -e
+* * * * * sudo python /home/pi/Desktop/heather/slave.py
+
 
 **Todo list:**
 
 - [ ] Clone relay/boiler slave
-- [ ] Create database
-- [ ] Create logging table in db
-- [ ] Create schedule table in db
-- [ ] Create routine for logging temps
+- [x] Create database
+- [x] Create logging table in db
+- [x] Create schedule table in db
+- [x] Create routine for logging temps
 - [ ] Create routine for effecting schedule based on logged temps
 - [ ] Create webUI
