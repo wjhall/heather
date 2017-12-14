@@ -38,6 +38,7 @@ run dbInit.py to setup heather.db with temp_log, bed_sched and lou_sched tables 
 
 
 **Logging**
+
 tempUpdate.py is to run on the master and will log temperatures to db.
 to run per minuite, use following in crontab -e
 ```
