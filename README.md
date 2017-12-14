@@ -32,15 +32,17 @@ crontab -e
 **SQL setup**
 ```
 sudo apt-get install sqlite3
-run dbInit.py to setup heather.db with temp_log, bed_sched and lou_sched tables with sched tables initialiesd with weekly values to 15.0
-.exit
 ```
+run dbInit.py to setup heather.db with temp_log, bed_sched and lou_sched tables with sched tables initialiesd with weekly values to 15.0
+
+
 
 ***Logging***
 tempUpdate.py is to run on the master and will log temperatures to db.
 to run per minuite, use following in crontab -e
+```
 * * * * * sudo python /home/pi/Desktop/heather/slave.py
-
+```
 
 **Todo list:**
 
